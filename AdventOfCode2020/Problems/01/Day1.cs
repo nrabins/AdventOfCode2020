@@ -13,12 +13,12 @@ namespace AdventOfCode2020.Problems._01
 
         protected override List<int> GetInput()
         {
-            return FileUtil.ReadFileAsIntList(InputPath);
+            return FileUtil<int>.ReadFileLinesAsList(InputPath, int.Parse);
         }
 
         public override string Part1()
         {
-            var expenses = GetInput();
+            var expenses = GetInput().ToList();
 
             for (var i = 0; i < expenses.Count - 1; i++)
             {
