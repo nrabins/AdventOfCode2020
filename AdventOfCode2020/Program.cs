@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-using AdventOfCode2020.Problems._03;
+using AdventOfCode2020.Problems._04;
 
 namespace AdventOfCode2020
 {
@@ -20,7 +20,7 @@ namespace AdventOfCode2020
             //    problem = LatestProblem();
             //}
 
-            var day = new Day3();
+            var day = new Day4();
             
             Console.WriteLine("Running Part 1...");
             var part1Result = day.Part1();

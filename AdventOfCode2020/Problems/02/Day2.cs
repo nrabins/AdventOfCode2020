@@ -9,11 +9,11 @@ namespace AdventOfCode2020.Problems._02
 {
     public class Day2 : Day<List<PolicyAndPassword>>
     {
-        private const string InputPath = @"C:\Users\nrabins\Development\AdventOfCode\AdventOfCode2020\AdventOfCode2020\Problems\02\Day2Input.txt";
+        private const string InputPath = @"02\Day2Input.txt";
 
         protected override List<PolicyAndPassword> GetInput()
         {
-            return FileUtil<PolicyAndPassword>.ReadFileLinesAsList(InputPath, PolicyAndPassword.Parse);
+            return FileUtil<PolicyAndPassword>.ReadFileLinesAsList(PathRoot + InputPath, PolicyAndPassword.Parse);
         }
 
         public override string Part1()

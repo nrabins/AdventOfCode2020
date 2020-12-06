@@ -8,12 +8,11 @@ namespace AdventOfCode2020.Problems._03
 {
     public class Day3 : Day<List<string>>
     {
-        private const string InputPath =
-            @"C:\Users\nrabins\Development\AdventOfCode\AdventOfCode2020\AdventOfCode2020\Problems\03\Day3Input.txt";
+        private const string InputPath = @"03\Day3Input.txt";
 
         protected override List<string> GetInput()
         {
-            return FileUtil<string>.ReadFileLinesAsList(InputPath, a => a);
+            return FileUtil<string>.ReadFileLinesAsList(PathRoot + InputPath, a => a);
         }
 
         public override string Part1()
